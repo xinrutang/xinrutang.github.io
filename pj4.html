@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Xinru Tang - Depressed Users on Social Media</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Home</strong></a>
+                <a href="research.html" class="logo"><strong>Research (Portfolio)</strong></a>
+                <a href="publications.html" class="logo"><strong>Publications</strong></a>
+            </header>
+
+            <!-- Content -->
+            <section>
+                <h3>Overview</h3>
+                <p>This is the final project of the Internet and Sociological Studies course. In this project, I leveraged text analysis and
+                social network analysis techniques to explore the features of posts of younger depressed users on Sina Weibo (a popular micro-blogging application in China),
+                    and their interaction pattern. This is my first try to leverage computational methods to understand people's behavior on social media.</p>
+
+                <h3>What I did</h3>
+                <p>literature review, data crawling, text analysis, social network analysis and report writing</p>
+
+                <h3>Why to do this Project</h3>
+                <p>In 2012, a post posted by a depressed user before suicide got popular on Sina Weibo. This user's nickname is ZouFan, and her account
+                soon received millions of comments from depressed users on Sina Weibo, as the post echoed their own feelings. This phenomenon attracted my attention -- the number of
+                depressed users on social media surprised me, and I was curious about how they behave and present themselves on social media. What would they
+                disclose on social media? Below is a screenshot of ZouFan's post -- "I have depression, and I want to die.Please don't pay attention to my leave. Goodbye.", and a large
+                numder of depressed users left their comments under the post.</p>
+                <div align="middle"><span><img style="max-width:40%;overflow:hidden;" src="images/depression.png" alt=""/></span></div><br/>
+
+                <h3>Datasets and Methods</h3>
+                I randomly selected 45 users who left comments under the post of ZouFan, and crawled their posts, including their original posts, reposted posts and the
+                features of these posts (e.g., the number of reposts/comments/Likes received). All users selected have left comments related to depression under ZouFan's post.
+                For comparison, I selected another 45 general users of Sina Weibo, and also crawled their posts. I then calculated the basic statistics of their posts,
+                and leveraged text analysis and social network analysis to do further analysis.<br/><br/>
+
+                <h3>Results</h3>
+                I will briefly summarize the results. If you are interested in the full results, please go to the PDF (in Chinese). <br/><br/>
+                <h4>Basic Statistics</h4>
+
+                The main difference lies in the interaction features (i.e., depressed users interacted less with others).<br/>
+                Meanwhile, the posts of depressed users contain <strong>fewer pics and emojis</strong>.<br/><br/>
+
+                <div align="middle">
+                <table border="1" style="max-width:80%;overflow:hidden;">
+                    <tr>
+                        <th></th>
+                        <th align="middle">Depressed_Average</th>
+                        <th align="middle">General_Average</th>
+                        <th align="middle">Depressed_Median</th>
+                        <th align="middle">General_Median</th>
+                    </tr>
+                    <tr>
+                        <td>Words in Every Original Post</td>
+                        <td align="middle">33.98</td>
+                        <td align="middle">31.96</td>
+                        <td align="middle">21</td>
+                        <td align="middle">21</td>
+                    </tr>
+                    <tr>
+                        <td># Reposts of Every Original Post</td>
+                        <td align="middle"><strong>0.13</strong></td>
+                        <td align="middle">1.12</td>
+                        <td align="middle">0</td>
+                        <td align="middle">0</td>
+                    </tr>
+                    <tr>
+                        <td># "Likes" Received in Every Original Post</td>
+                        <td align="middle">1.32</td>
+                        <td align="middle">1.43</td>
+                        <td align="middle">0</td>
+                        <td align="middle">0</td>
+                    </tr>
+                    <tr>
+                        <td># Comments Received in Every Original Post</td>
+                        <td align="middle"><strong>0.62</strong></td>
+                        <td align="middle">1.99</td>
+                        <td align="middle">0</td>
+                        <td align="middle">0</td>
+                    </tr>
+                    <tr>
+                        <td># Pictures in Every Original Post with Pics</td>
+                        <td align="middle"><strong>1.55</strong></td>
+                        <td align="middle">2.56</td>
+                        <td align="middle">1</td>
+                        <td align="middle">1</td>
+                    </tr>
+                </table>
+
+
+
+                <table border="1" style="max-width:50%;overflow:hidden;">
+                    <tr>
+                        <th></th>
+                        <th align="middle">Depressed</th>
+                        <th align="middle">General</th>
+                    </tr>
+                    <tr>
+                        <td>Percentage of Reposted Posts</td>
+                        <td align="middle"><strong>42%</strong></td>
+                        <td align="middle">47%</td>
+                    </tr>
+                    <tr>
+                        <td>Percentage of Posts with Pics</td>
+                        <td align="middle">44%</td>
+                        <td align="middle">45%</td>
+                    </tr>
+                    <tr>
+                        <td>Percentage of Posts with Emojis</td>
+                        <td align="middle"><strong>31%</strong></td>
+                        <td align="middle">37%</td>
+                    </tr>
+                </table>
+                </div>
+
+
+                <h4>Text Analysis</h4>
+                <h5>LIWC2015</h5>
+                Depressed users are less likely to use plural personal pronouns such as "we", "they", "you" etc.<br/>
+                Also, they use more present words than future words, which means they have fewer expectations for the future.<br/>
+                Not surprisingly, they express negative emotions more often than positive ones, and they also mention "death" and "money" more often than general users.
+                <div align="middle"><span><img style="max-width:80%;overflow:hidden;" src="images/liwc.png" alt=""/></span></div>
+
+                <h5>Keywords Extraction with TF-IDF</h5>
+                Obviously, the keywords in depressed users' posts are more often related to "depression".<br/><br/>
+                <div align="middle">
+                <table border="1" style="max-width:80%;overflow:hidden;">
+                    <tr>
+                        <th></th>
+                        <th align="middle">Top20 Keywords</th>
+                    </tr>
+                    <tr>
+                        <td>Depressed_Original</td>
+                        <td><strong>depression</strong>, relax, good-looking, <strong>sad</strong>, <strong>live</strong>, <strong>depressed</strong>, dislike, angry,
+                            unpleasant, friends, not good, work hard, suffering, kids, emotion, happy birthday, mother, mood, fighting, damn</td>
+                    </tr>
+                    <tr>
+                        <td>General_Original</td>
+                        <td>fighting, happy birthday, happiness, music video, friends, travel, mood, selfie, home, look forward to, nice, girls, toast,
+                            time, teacher, block, birthday, summer, day, mark</td>
+                    </tr>
+                    <tr>
+                        <td>Depressed_Reposts</td>
+                        <td><strong>depression</strong>, bye, funny, Chen Weitou (a popular star in China), Li Yifeng (a popular star in China), care, death, leave, fans, thank, friends, William,
+                            netizens, GuJian (a popular TV series), efforts, children, MV, koi, life, girls</td>
+                    </tr>
+                    <tr>
+                        <td>General_Repost</td>
+                        <td>MV, Aries, horoscope, friend, love, Aries, happiness, Mayday (a popular band in China), Cancer, man, happy birthday, Virgo, girl,
+                            classmate, thank you, Sagittarius, funny, Scorpio, Aquarius, Pisces</td>
+                    </tr>
+                </table>
+        </div>
+
+                <h5>Topic Detection with LDA</h5>
+                <div align="middle">
+                    <table border="1" style="max-width:80%;overflow:hidden;">
+                        <tr>
+                            <th></th>
+                            <th align="middle">Topics Extracted Selected (Please go to the PDF to see all topics extracted.)</th>
+                        </tr>
+                        <tr>
+                            <td>Depressed_Original</td>
+                            <td>Topic 1 - growing up: <strong>depression</strong>, growing up, selfishness, anxiety, loss, sunshine, anyone, childhood, darkness<br/>
+                                Topic 2 - breakdown emotions: <strong>breakdown</strong>, pain, insomnia, death, sorry, experience, nausea, heartache, social<br/>
+                                Topic 3 - sleep: happy birthday, eyes, wish, non-stop, crazy, <strong>sleep</strong>, mistakes, dreaming, hypocrisy</td>
+                        </tr>
+                        <tr>
+                            <td>General_Original</td>
+                            <td>Topic 1 - future: home, expectation, believe, semester, care, effort, blessing, sister, star<br/>
+                                Topic 2 - friendship: pity, friends, indifference, hurt, gift, cherish, comfort, loss, men<br/>
+                                Topic 3 - sex: handsome, end of term, so tired, my brother, awesome, vacation, have, fun, nymphomaniac</td>
+                        </tr>
+                        <tr>
+                            <td>Depressed_Reposts</td>
+                            <td>Topic 1 - death: depression, don't have to, <strong>death</strong>, care, bye, experience, believe, grow, culture<br/>
+                                Topic 2 - growth: cheer, meaning, each other, feelings, persistence, home, decision, college, fear<br/>
+                                Topic 3 - family & control: mom, meet, <strong>control</strong>, dad, mature, emotion, carry on, understanding, patriotic</td>
+                        </tr>
+                        <tr>
+                            <td>General_Repost</td>
+                            <td>Topic 1 - animation: design, each other, classmates, starring, sorry, director, anime, having, romance<br/>
+                                Topic 2 - short film: short film, care, eyes, youth, mood, Korea, first, school, English<br/>
+                                Topic 3 - quotes on love: love, marriage, breakup, tears, expression, lovers, sad, perfect, global</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <h4>Social Network Analysis</h4>
+                Obviously, depressed users interacted less with others.<br/><br/>
+                <div align="middle">
+                    <table border="1" style="max-width:50%;overflow:hidden;">
+                        <tr>
+                            <th></th>
+                            <th align="middle">Depressed</th>
+                            <th align="middle">General</th>
+                        </tr>
+                        <tr>
+                            <td>Average Outdegree</td>
+                            <td align="middle">1.309</td>
+                            <td align="middle">1.748</td>
+                        </tr>
+                        <tr>
+                            <td>Average Weighted Outdegree</td>
+                            <td align="middle"><strong>3.146</strong></td>
+                            <td align="middle">4.546</td>
+                        </tr>
+                        <tr>
+                            <td>Average Indegree</td>
+                            <td align="middle">1.911</td>
+                            <td align="middle">2.201</td>
+                        </tr>
+                        <tr>
+                            <td>Average Weighted Indegree</td>
+                            <td align="middle"><strong>2.56</strong></td>
+                            <td align="middle">4.1</td>
+                        </tr>
+                        <tr>
+                            <td>Network Diameter</td>
+                            <td align="middle"><strong>25</strong></td>
+                            <td align="middle">31</td>
+                        </tr>
+                    </table>
+                    </div>
+
+                    The figure on the left is the repost network of depressed users, while the right general users.
+                <div align="middle">
+                    <span><img style="max-width:80%;overflow:hidden;" src="images/depression-sna.png" alt=""/></span></div>
+
+
+
+                <h3>Reflection</h3>
+                This project has made me feel the power of the combination of computational methods and social science for the first time. While computational
+                methods have the power to analyze large-scale behavior data, the analysis and the interpretation of the results need the help from social science.
+                In this project, results of computational analysis on depressed users on social media well echoed three types of suicide proposed by Durkheim --
+                egoistic suicide reflects a prolonged sense of not belonging (e.g., less interaction with others); altruistic suicide is characterized by a sense
+                of being overwhelmed by a group's goals and beliefs (e.g., marriage, money); fatalistic suicide occurs when a person is excessively
+                regulated (e.g., control from family).
+            </section>
+
+            <a href="research.html" class="button primary big">Back</a>
+
+
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Xinru Tang - Audi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Home</strong></a>
+                <a href="research.html" class="logo"><strong>Research (Portfolio)</strong></a>
+                <a href="publications.html" class="logo"><strong>Publications</strong></a>
+            </header>
+
+            <!-- Content -->
+            <section>
+                <h3>Overview</h3>
+                <p>This project is an interface for crowdsourcing systems, aiming to improve crowd workers' user experience and
+                    working quality. Specifically, we utilized the background color of the website to tell users their estimated
+                accuracy, which was calculated by an estimation algorithm. We also employed both qualitative and quantitative methods to test the performance.</p>
+
+                <h3>My Contributions</h3>
+                <p>assisted in design, responsible for literature review, user study (survey & interview) and paper writing</p>
+
+                <h3>Why to Conduct this Research: the Design Problem</h3>
+                <p>Through literature review, I found that the main motivation of crowd workers to do crowd tasks is money incentives. However,
+                    <strong>many crowd workers are suffering from the information gap between the task requester and workers -- the task requester
+                        know why the submitted answers are rejected, while crowd workers only received a simple notice of rejection.</strong> This made many crowd workers
+                    feel unfair and their motivation decreased. Some researchers have found that the feedback from experts/peers is effective to
+                    improve the user experience of crowd workers <i>[Dow, S., A. Kulkarni, S. Klemmer, and B. Hartmann (2012): ‘Shepherding the crowd yields better
+                    work’. In: Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work.
+                        Seattle, Washington, USA, pp. 1013–1022.]</i>, however it costs both time and money.
+                    Therefore, we aimed to propose a new interface to offer crowd workers feedback automatically.
+                </p>
+
+                <h3>Outcome</h3>
+                We leveraged accuracy estimation algorithm proposed by <i>[Feng, J., G. Li, H. Wang, and J. Feng (2014): ‘Incremental Quality Inference in Crowdsourcing’. In:
+                International Conference on Database Systems for Advanced Applications. pp. 453–467.]</i>, to calculate the estimated accuracy of workers, and we told users
+                their estimated accuracy by the background color of the site, as shown in the screenshot below. Specifically, through a pilot study, we correspond the color schema with an
+                accuracy ranging from 75% to 100%, so that participants could easily see the change of color. That is, the accuracy rate of 75% corresponds
+                to the reddest color, and the accuracy rate of 100% corresponds to the greenest. <br/><br/>
+                <div align="middle"><span><img style="max-width:50%;overflow:hidden;" src="images/audi_interface.png" alt=""/></span><br/><br/></div>
+
+                <h3>Evaluation</h3>
+                To test the performance and effect of the interface, we employed both quantitative and qualitative methods to do user study.<br/><br/>
+
+                <h4>Experiment Design</h4>
+                44 participants were recruited for the study, who were evenly divided into control group and experiment group. We gave participants two days to
+                complete all the tasks, so they could choose any time they like and pause whenever they want, as a way to simulate the real world situation.<br/><br/>
+
+                <h4>Back-end Data Results</h4>
+                By analyzing back-end data, we found that:
+                <li>the performance of experiment group is more stable (the standard deviation of experiment group's accuracy is smaller)</li>
+                <li>the performance of experiment group is better in terms of accuracy & pass rate</li>
+                However,
+                <li>the drop rate of experiment group is larger</li><br/>
+                <div align="middle">
+                <span><img align="middle" style="max-width:50%;overflow:hidden;" src="images/audi-table.png" alt=""/></span><br/>
+                    <span><img align="middle" style="max-width:26%;overflow:hidden;" src="images/audi-acc.png" alt=""/></span>
+                </div>
+
+
+
+                <h4>Survey</h4>
+                Participants were asked to do a survey regarding their work experience. Questions covered concentration,
+                confidence, expected accuracy, perseverance etc. Results show that: <br/>
+                <li>the majority of participants in experiment group considered the feedback was consistent with their own estimations</li>
+                <li>the control group’s self-estimation was significantly lower</li>
+                <li>the estimated rate was more consistent with the real performance in the experiment group than the control group</li>
+                The reasons for the better performance of experiment group would be explained in the interview phase.<br/><br/>
+                <div align="middle"> <span><img style="max-width:30%;overflow:hidden;" src="images/acc-confidence.png" alt=""/></span></div>
+
+
+                <h4>Interviews</h4>
+                We recruited 10 interviewees before the experiment started and sought out one more who chose to quit the task. Our questions mainly focused on how they felt about the feedback
+                display, whether it accorded with their own estimation, how they were possibly influenced by the feedback display, and whether they liked to have the display or not, and why.<br/><br/>
+
+                Basically, the interface was well received by our participants. Here are the main advantages.
+                <li><strong>facilitate the understanding of the task requirement</strong>: participants would pause to think and study the task requirement when the interface gets red</li>
+                <li><strong>offer the confidence and reduce uncertainty</strong>: participants felt assured when the interface keeps green</li>
+                <li><strong>evoke emotional responses</strong>: red evoked anxiety and pushed users to find the right way, while green made users feel at ease</li>
+                However, the display also has some disadvantages as follows:
+                <li>users may <strong>quit</strong> if they saw redness all the time as they felt hopeless to get the pay</li>
+                <li>the large area used for display may <strong>cause distraction and make users sensitive</strong></li><br/>
+
+                <h3>Future Work</h3>
+                Therefore, future work could be done to compare different ways of feedback giving. For example,
+                providing users with the accuracy of the latest five answers he/she submitted may be better. Besides, choosing mild color instead of red may
+                avoid the distraction problem.<br/><br/>
+
+
+                <h3>Limitations</h3>
+                This project mainly has two limitations. 1. One of the main limitations is the limited task it could support (i.e., the algorithm could
+                only estimate the accuracy of single-choice problems). 2. We did not test the performance
+                among experienced crowd workers. Future work is still needed to find out how to design a better auto-feedback interface for crowd workers.
+            </section>
+
+            <a href="research.html" class="button primary big">Back</a>
+
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
