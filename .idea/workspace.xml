@@ -4,18 +4,6 @@
     <list default="true" id="416ca2ed-f972-4f73-b9bc-7458fe9f549d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/acc-confidence.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/audi-acc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/audi-table.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/audi_interface.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cocosign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/depression-sna.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/depression.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/foodshow-screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/foodshow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/liwc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/older.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screenshot-older.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="118" selection-start-line="48" selection-start-column="118" selection-end-line="48" selection-end-column="118" />
+            <state relative-caret-position="370">
+              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -42,8 +30,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="1753" column="12" selection-start-line="1753" selection-start-column="6" selection-end-line="1753" selection-end-column="12" />
+            <state relative-caret-position="682">
+              <caret line="1847" column="20" lean-forward="true" selection-start-line="1847" selection-start-column="20" selection-end-line="1847" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -64,9 +52,11 @@
       <find>body</find>
       <find>padding</find>
       <find>padding: in</find>
-      <find>img</find>
       <find>html</find>
       <find>height</find>
+      <find>footer</find>
+      <find>wrapper</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,10 +82,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1677" />
-    <option name="y" value="155" />
     <option name="width" value="1440" />
-    <option name="height" value="875" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -165,17 +153,18 @@
       <workItem from="1647647084401" duration="202000" />
       <workItem from="1647647343522" duration="839000" />
       <workItem from="1647648235738" duration="542000" />
+      <workItem from="1647648903263" duration="750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5675000" />
+    <option name="totallyTimeSpent" value="6425000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -201,6 +190,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="118" selection-start-line="48" selection-start-column="118" selection-end-line="48" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26295">
+          <caret line="1753" column="12" selection-start-line="1753" selection-start-column="6" selection-end-line="1753" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -312,15 +315,15 @@
     <entry file="file://$PROJECT_DIR$/assets/js/main.js" />
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="1753" column="12" selection-start-line="1753" selection-start-column="6" selection-end-line="1753" selection-end-column="12" />
+        <state relative-caret-position="682">
+          <caret line="1847" column="20" lean-forward="true" selection-start-line="1847" selection-start-column="20" selection-end-line="1847" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="118" selection-start-line="48" selection-start-column="118" selection-end-line="48" selection-end-column="118" />
+        <state relative-caret-position="370">
+          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
         </state>
       </provider>
     </entry>
